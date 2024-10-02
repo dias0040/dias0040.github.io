@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week4</title>
+    <!-- inline css -->
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+    <body>
+            <header>
+                <h1>Week 4 Learning</h1>
+            </header>
+            <main>
+            <!-- learning about img tag -->
+            <h2>
+                Image tag example
+            </h2>
+            <img src="./images/coffee-shop.jpg" alt="Image of coffee-shop">
+            <img src="./images/coffee-shop.jpg" title="Image of coffee-shop" width="50px">
+            <!-- if a image is decorative keep the alt tag empty -->
+            <!-- learning about anchor tags -->
+            <h2>Link tag example</h2>
+            <p>Here is a link to vist google home page <a href="https://www.google.com" target="_blank">google home page</a>.</p>
+            <!-- taking you to another page in the same site -->
+            <a href="./page1.html">Thank you page</a><br>
+            <!-- taking you to a section in the same page -->
+            <a href="#cakes">Jump to cakes menu</a>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+        dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+        saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+        Saepe.
+        </p>
+        <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis at,
+        dignissimos ratione doloremque rerum non rem cum laudantium quia consectetur,
+        saepe perferendis aperiam iste reprehenderit fugit ipsa, excepturi impedit.
+        Saepe.
+        </p>
+        <ul id="cakes">
+        <li>Red Velvet</li>
+        <li>Tiramisu</li>
+        <li>Black Forest</li>
+        </ul>
+        <!-- tables in html -->
+        <h2>Simple html Table</h2>
+        <table>
+            <caption>Student Grade Info</caption>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Course</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jhon Smith</td>
+                    <td>Web Dev 1</td>
+                    <td>A</td>
+                </tr>
+                <Tr>
+                    <td>Mel</td>
+                    <td>Web Dev 2</td>
+                    <td>A+</td>
+                </Tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Name</th>
+                <th colspan="2">Scores</th>
+              </tr>
+              <tr>
+                <th>Maths</th>
+                <th>English</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Bob</td>
+                <td>10/10</td>
+                <td>9/10</td>
+              </tr>
+              <tr>
+                <td>Fran</td>
+                <td>8/10</td>
+                <td>10/10</td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- Creating a table <table> -->
+          <table>
+            <!-- colspan to control the count of colums that takes to write days, same goes for rawspan -->
+            <thead>
+                <!-- tr to open a table row -->
+                <tr>
+                    <!-- th to open a cell-->
+                    <th colspan="2"> Days</th>
+                    <th colspan="2"> Month</th>
+                </tr> 
+                <tr>
+                    <td>Mon</td>
+                    <td>Wed</td>
+                    <td>Jan</td>
+                    <td>Sep</td>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td>7</td>
+                </tr>
+           </tbody>
+          </table>
+          <!-- form elements -->
+           <h2> HTML Form Elements</h2><br>
+           <form action="./thanks.html" method="get">
+            <label for="Full Name">Name:</label>
+            <input id="Full Name" type="text" placeholder="your name here" name="Full Name"> <br>
+
+            <label for="age">Age:</label>
+            <input id="age" type="number" min="0" max="100" name="age"><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email">
+
+            <button type="submit">Send</button>
+           </form>
+        </main>
+    </body>
+</html>
