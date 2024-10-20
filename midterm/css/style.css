@@ -1,138 +1,180 @@
+/* Reset default margin and padding for all elements to ensure consistency */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-html {
-    font-size: 20px;
-}
-body {
-    background-color: #aad4cf;
-    color: rgb(10, 10, 10);
-}
-.contents {
-    max-width: 80%;
-    margin: 0 auto;
-}
-header {
-    background-color: rgb(83, 83, 83);
-    color: aliceblue;
-    padding: 4rem 0;
-    text-align: center;
-    background-image: url("./images/lone-starfish-wide.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-bottom: 0px;
-}
-h1 {
-    font-size: 80px;
-    font-weight: normal;
-    margin-top: 140px;
-}
-main {
-    background-color:#d4e9e7;
-    padding: 5px 0px;
-}
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding-top: 5px 0;
-    justify-content: space-between;
-    display: flex;
-    margin: 140px;
-    margin-bottom: 30px;
-    margin-top: 0px;
-    font-size: 25px;
-       
-}
-nav ul li {
-    display: inline;
-    
-}
-nav ul li a {
-    text-decoration: none;
-    color: rgb(18, 18, 18);
-}
-.divider {
-    width: 1px; 
-    height: 40px; 
-    background-color: rgb(28, 28, 28); 
-}
-h2 {
-    font-size: 37px;
-    font-weight: normal;
-    margin-bottom:15px ;
-}
-.wrapper {
-    width: 1180px; 
-    margin: 10px auto;
-}
-.image {
-    float: left;
-    margin-right: 15px; 
-    margin-bottom: 20px;
-    width: 262px; 
-}
-h3 {
-    font-size: 30px;
-    font-weight: normal;
-    margin-top:35px ;
-    margin-bottom: 13px;
-    padding: 10px 10px;
-}
-ul {
-    padding-left: 30px;
-}
-form {
-    border: 1.5px solid #333; 
-    padding: 15px; 
-    max-width: auto; 
-    margin: 10px;
-    margin-top: -35px;
-    justify-content: space-between;
-}
-#fullname {
-    height: 10px;
-}
-#email {
-    height: 14px;
-}
-#message {
-    height: 70px;
-}
-.type {
-    width: 98%;
-    padding: 10px;
-    margin-bottom: 15px; 
-    margin-top: 8px;
-    border: 1px solid #ccc; 
-}
-h4 {
-    font-weight: normal;
-    font-size: 22px;
-    margin-top: 7px;
-}
-.option {
-    display: inline;
-    margin-top: 26px;
-    justify-content: space-between;
-    padding-left: 5px;
-}
-button {
-    padding: 10px;
-    margin-bottom: 5px; 
-    margin-top: 20px;
-    border: 1px solid #222222; 
-    background-color: transparent;
-    font-size: 11px;
-}
-footer {
-    background-color:#d4e9e7 ;
-    margin-bottom: 15px;
-    padding: 10px 0px;
-    padding-right: 30px;
-    padding-bottom: 30px;
-    text-align: right;
+    font-family: Arial, Helvetica, sans-serif; /* Set a default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
+/* Set the base font size for the entire document */
+html {
+    font-size: 20px; /* Base font size, makes it easier to manage responsive sizing */
+}
+
+/* Body styles */
+body {
+    background-color: #aad4cf; /* Light teal background color */
+    color: rgb(10, 10, 10); /* Dark text color for contrast */
+}
+
+/* Center the contents and limit their maximum width */
+.contents {
+    max-width: 80%; /* Maximum width to 80% of the viewport */
+    margin: 0 auto; /* Center the element horizontally */
+}
+
+/* Header styles */
+header {
+    background-color: rgb(83, 83, 83); /* Dark gray background color */
+    color: aliceblue; /* Light blue text color */
+    padding: 4rem 0; /* Vertical padding */
+    text-align: center; /* Center text */
+    background-image: url("./images/lone-starfish-wide.jpg"); /* Background image */
+    background-size: cover; /* Cover the entire header area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    margin-bottom: 0px; /* No margin below the header */
+}
+
+/* Heading 1 styles */
+h1 {
+    font-size: 80px; /* Large font size for main title */
+    font-weight: normal; /* Normal font weight */
+    margin-top: 140px; /* Space above the heading */
+}
+
+/* Main content styles */
+main {
+    background-color: #d4e9e7; /* Light background color */
+    padding: 5px 0px; /* Padding above and below */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    text-align: center; /* Center the list items */
+    justify-content: space-between; /* Distribute space between items */
+    display: flex; /* Use flexbox for layout */
+    margin: 140px; /* Margin around the navigation */
+    margin-bottom: 30px; /* Additional bottom margin */
+    margin-top: 0px; /* No top margin */
+    font-size: 25px; /* Font size for navigation items */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: rgb(18, 18, 18); /* Dark link color */
+}
+
+/* Divider styles */
+.divider {
+    width: 1px; /* Width of the divider */
+    height: 40px; /* Height of the divider */
+    background-color: rgb(28, 28, 28); /* Dark color for the divider */
+}
+
+/* Heading 2 styles */
+h2 {
+    font-size: 37px; /* Font size for secondary headings */
+    font-weight: normal; /* Normal font weight */
+    margin-bottom: 15px; /* Space below the heading */
+    padding-left: 7px; /* Padding to the left */
+}
+
+/* Wrapper for larger content sections */
+.wrapper {
+    width: 1180px; /* Fixed width for the wrapper */
+    margin: 10px auto; /* Center the wrapper */
+}
+
+/* Image styles */
+.image {
+    float: left; /* Float images to the left */
+    margin-right: 15px; /* Space to the right of the image */
+    margin-bottom: 20px; /* Space below the image */
+    width: 262px; /* Fixed width for images */
+}
+
+/* Heading 3 styles */
+h3 {
+    font-size: 30px; /* Font size for third-level headings */
+    font-weight: normal; /* Normal font weight */
+    margin-top: 35px; /* Space above the heading */
+    margin-bottom: 13px; /* Space below the heading */
+    padding: 10px 10px; /* Padding around the heading */
+}
+
+/* Unordered list styles */
+ul {
+    padding-left: 30px; /* Space to the left of the list items */
+}
+
+/* Form styles */
+form {
+    border: 1.5px solid #333; /* Dark border around the form */
+    padding: 15px; /* Padding inside the form */
+    max-width: 100%; /* Allow full width */
+    margin: 10px; /* Margin around the form */
+    margin-top: -35px; /* Negative margin to pull it up */
+    justify-content: space-between; /* Distribute space between items */
+}
+
+/* Input field styles */
+#fullname {
+    height: 10px; /* Specific height for fullname input */
+}
+
+#email {
+    height: 14px; /* Specific height for email input */
+}
+
+#message {
+    height: 70px; /* Height for the message textarea */
+}
+
+/* General input field styling */
+.type {
+    width: 98%; /* Almost full width of the container */
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    margin-top: 8px; /* Space above input fields */
+    border: 1px solid #ccc; /* Light border */
+}
+
+/* Heading 4 styles */
+h4 {
+    font-weight: normal; /* Normal font weight */
+    font-size: 22px; /* Font size for fourth-level headings */
+    margin-top: 7px; /* Space above the heading */
+}
+
+/* Option styling for inline elements */
+.option {
+    display: inline; /* Display options inline */
+    margin-top: 26px; /* Space above options */
+    justify-content: space-between; /* Distribute space between items */
+    padding-left: 5px; /* Padding to the left */
+}
+
+/* Button styling */
+button {
+    padding: 10px; /* Padding inside the button */
+    margin-bottom: 5px; /* Space below the button */
+    margin-top: 20px; /* Space above the button */
+    border: 1px solid #222222; /* Dark border around the button */
+    background-color: transparent; /* Transparent background */
+    font-size: 11px; /* Font size for the button */
+}
+
+/* Footer styles */
+footer {
+    background-color: #d4e9e7; /* Light footer background */
+    margin-bottom: 15px; /* Space below the footer */
+    padding: 10px 0px; /* Vertical padding */
+    padding-right: 30px; /* Right padding */
+    padding-bottom: 30px; /* Bottom padding */
+    text-align: right; /* Right-align footer text */
+}
