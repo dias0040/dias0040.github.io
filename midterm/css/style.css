@@ -86,7 +86,7 @@ h2 {
 
 /* Wrapper for larger content sections */
 .wrapper {
-    width: 1180px; /* Fixed width for the wrapper */
+    width: 98.33%; /* Fixed width for the wrapper */
     margin: 10px auto; /* Center the wrapper */
 }
 
