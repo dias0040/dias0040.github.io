@@ -1,0 +1,52 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 5px solid darkred;
+    padding: 10px;
+    margin: 10px;
+}
+/*
+Set Width and Border
+*/
+.container{
+    width: 400px;
+    border: 6px solid #111;
+  }
+  
+  /*
+  Add some space between the border;
+  */
+  figure{
+    margin: 10px;
+  }
+  
+  /*
+  Give the caption a distinct style.
+  */
+  figcaption{
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    background:#111;
+    color: #fff;
+  }
+  
+  /* 
+  Responsive Image
+  The image will scale with the size of it's container
+  */
+  figure img{
+    width:100%;
+    height: auto;
+    display: block;
+  }
+  .container {
+  width: 500px;
+  margin: 0 auto;
+}
+img{
+  width: 200px;
+  float: left;
+}
+  
