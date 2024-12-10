@@ -1,723 +1,826 @@
+/* General Body Styles */
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Sets the font for the entire page */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
-
+/* Header Styles */
 header {
-    background-color: #222222;  
-    padding: 1rem 0;  
-    padding-bottom: 2px;   
-}
-nav{
-    padding: 0rem .6rem;
-    padding-bottom: 10px;
-    justify-content: center;
-}
-.img{
-    background-color:#c78c06 ;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    background-color: #222222;  /* Dark background for the header */
+    padding: 1rem 0;  /* Vertical padding inside header */
+    padding-bottom: 2px;  /* Bottom padding for slight separation */
 }
 
+/* Navigation Styles */
+nav {
+    padding: 0rem .6rem;  /* Horizontal padding */
+    padding-bottom: 10px;  /* Bottom padding for spacing */
+    justify-content: center;  /* Centers navigation items */
+}
+
+/* Styling for Image Section (likely a banner or background) */
+.img {
+    background-color: #c78c06; /* Bright accent color */
+    padding-top: 1rem;  /* Top padding */
+    padding-bottom: 1rem;  /* Bottom padding */
+}
+
+/* Navigation List Styles */
 nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;      
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    display: flex;  /* Flexbox for layout */
+    flex-direction: column;  /* Stacks items vertically */
+    align-items: center;  /* Centers items horizontally */
+    padding: 0;  /* No padding */
+    margin: 0;  /* No margin */
+    width: 100%;  /* Full width */
 }
+
+/* Navigation Links Styling */
 nav ul li a {
-    display: block;
-    color: white;           
-    text-decoration: none;  
-    font-size: 18px;        
-    padding: 1.5rem 0;     
-    color:#c78c06;
-    width: 42.75rem; 
-    text-align: center;
-   
+    display: block;  /* Makes the link a block-level element */
+    color: #c78c06;  /* Text color */
+    text-decoration: none;  /* Removes underline from links */
+    font-size: 1rem;  /* Font size */
+    padding: 1.5rem 0;  /* Padding for link height */
+    width: 42.75rem;  /* Fixed width */
+    text-align: center;  /* Centers the text */
 }
+
+/* Search Bar Container */
 .search-container {
-    display: flex;
-    font-size: 17px;       
-    outline: none; 
+    display: flex;  /* Flexbox layout for the search bar */
+    font-size: 1rem;  /* Font size for the search text */
+    outline: none;  /* Removes outline from input on focus */
 }
+
+/* Search Input Field */
 .search-input {
-    flex-grow: 1;   
-    padding:  0 6px;       
-    height: 26px;   
-    font-size: 14px; 
-    
-         
+    flex-grow: 1;  /* Takes up remaining space */
+    padding: 0 6px;  /* Horizontal padding */
+    height: 26px;  /* Height of the input */
+    font-size: 0.875rem;  /* Font size */
 }
+
+/* Search Button Styles */
 nav form button {
-    background-color: #222;  
-    color: #c78c06;          
-    border: 1.5px solid #c78c06;
+    background-color: #222;  /* Dark button background */
+    color: #c78c06;  /* Button text color */
+    border: 1.5px solid #c78c06;  /* Border color */
 }
+
+/* Magnifying Glass Icon (Search) */
 .fa-solid.fa-magnifying-glass {
-    font-size: 15px;
-    justify-content: center;
+    font-size: 15px;  /* Icon size */
+    justify-content: center;  /* Centers the icon */
 }
-.banner{
-    background:url(../images/main-banner.jpg);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background-repeat: no-repeat;  
-    background-size: cover;
-    background-position: center;
-    width: 100%;   
-    
-    
+
+/* Banner Section */
+.banner {
+    background: url(../images/main-banner.jpg);  /* Background image */
+    padding-top: 3rem;  /* Padding on top */
+    padding-bottom: 3rem;  /* Padding at the bottom */
+    background-repeat: no-repeat;  /* Prevents image from repeating */
+    background-size: cover;  /* Ensures image covers entire section */
+    background-position: center;  /* Centers the background image */
+    width: 100%;  /* Full width */
 }
+
+/* Main Heading (h1) */
 h1 {
-    font-weight: bold;
-    font-size: 50px;
-    color:#fff;
-    padding-top: 3rem;
-    padding-left: .8rem;
-    line-height: 65px;
-    background-color: #2222229e;
-    margin-top: 4.5rem;
-
+    font-weight: bold;  /* Bold font */
+    font-size: 3.125rem;  /* Font size */
+    color: #fff;  /* White text color */
+    padding-top: 3rem;  /* Padding at the top */
+    padding-left: 0.8rem;  /* Padding on the left */
+    line-height: 65px;  /* Line height for spacing */
+    background-color: rgba(34, 34, 34, 0.62);  /* Semi-transparent dark background */
+    margin-top: 4.5rem;  /* Margin from top */
 }
+
+/* Welcome Paragraph */
 .welcome-paragraph {
-    font-size: 10px;
-    color: #fff;
-    padding-left: .8rem;
-    padding-top: 20px;
-    background-color: #2222229e;
-    padding-bottom: 15px;
-    line-height: 15px;
-    font-weight: lighter;
+    font-size: 0.625rem;  /* Small font size */
+    color: #fff;  /* White text */
+    padding-left: 0.8rem;  /* Padding on the left */
+    padding-top: 20px;  /* Padding at the top */
+    background-color: rgba(34, 34, 34, 0.62);  /* Semi-transparent dark background */
+    padding-bottom: 15px;  /* Padding at the bottom */
+    line-height: 1rem;  /* Line height */
+    font-weight: lighter;  /* Lighter font weight */
 }
-.banner a{
-    display: inline-block;
-    text-decoration: none;
-    font-weight: normal;
-    list-style: none;
-    color: #222;
-    background-color: #c78c06;
-    padding: 20px;
-    font-size: 15px;
-    margin-top: 10px; 
+
+/* Banner Call-to-Action Link */
+.banner a {
+    display: inline-block;  /* Makes the link a block-level element */
+    text-decoration: none;  /* Removes underline */
+    color: #222;  /* Text color */
+    background-color: #c78c06;  /* Button background color */
+    padding: 20px;  /* Padding inside the button */
+    font-size: 1rem;  /* Font size */
+    margin-top: 10px;  /* Top margin */
 }
+
+/* About Us Section */
 #about-us {
-    background-color:#ffe6ac;
-    padding: 10px;
-    padding-bottom: 0;
+    background-color: #ffe6ac;  /* Light yellow background */
+    padding: 10px;  /* Padding around content */
+    padding-bottom: 0;  /* No bottom padding */
 }
+
 #about-us img {
-    width: 100%;
-    padding-bottom: 20px;
+    width: 100%;  /* Full width image */
+    padding-bottom: 20px;  /* Bottom padding */
 }
+
 #about-us h2 {
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 13px;
+    font-size: 1.875rem;  /* Font size */
+    font-weight: bold;  /* Bold font */
+    padding-bottom: 13px;  /* Bottom padding */
 }
+
 #about-us p {
-    font-size: 10px;
-    padding-bottom: 15px;
-    line-height: 15px;
-    font-weight: normal;
+    font-size: 0.625rem;  /* Small font size */
+    padding-bottom: 15px;  /* Bottom padding */
+    line-height: 1rem;  /* Line height */
+    font-weight: normal;  /* Normal font weight */
 }
+
+/* Services Section */
 #services h2 {
-    font-size: 30px;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-bottom: 13px;
+    font-size: 1.875rem;  /* Font size */
+    font-weight: bold;  /* Bold font */
+    padding-left: 10px;  /* Padding on the left */
+    padding-top: 15px;  /* Padding on the top */
+    padding-bottom: 13px;  /* Padding at the bottom */
 }
+
+/* Plans Section */
 .plans div {
-    background-color:#ffe6ac;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    margin: 10px;
-    
+    background-color: #ffe6ac;  /* Light yellow background */
+    margin-bottom: 10px;  /* Margin between items */
+    padding-bottom: 10px;  /* Padding at the bottom */
+    margin: 10px;  /* Margin around the plan */
 }
+
 .plans div img {
-    width: 100%;
-    padding-bottom: 15px;
+    width: 100%;  /* Full width image */
+    padding-bottom: 15px;  /* Padding at the bottom */
 }
+
 .plans div h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 13px;
-    padding: 10px;
+    font-size: 1.25rem;  /* Font size */
+    font-weight: bold;  /* Bold font */
+    padding-bottom: 13px;  /* Bottom padding */
+    padding: 10px;  /* Padding inside the plan */
 }
+
 .plans div p {
-    font-size: 10px;
-    padding-bottom: 15px;
-    line-height: 13px;
-    padding: 10px;
+    font-size: 0.625rem;  /* Small font size */
+    padding-bottom: 15px;  /* Padding at the bottom */
+    line-height: 1rem;  /* Line height */
+    padding: 10px;  /* Padding inside the plan */
 }
+
 .plans div a {
-    display:inline-block;
-    padding: 22px;
-    background-color: #222;
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-    margin-left: 10px;
-    justify-content: center;
+    display: inline-block;  /* Makes the link a block element */
+    padding: 22px;  /* Padding inside the button */
+    background-color: #222;  /* Dark background */
+    text-decoration: none;  /* Removes underline */
+    color: #fff;  /* White text */
+    font-size: 0.8125rem;  /* Font size */
+    margin-left: 10px;  /* Left margin */
+    justify-content: center;  /* Centers content */
 }
+
 .fa-solid.fa-caret-right {
-    font-size: 20px;
-    margin-left: 5px;
-    justify-content: center;
+    font-size: 1.25rem;  /* Icon size */
+    margin-left: 5px;  /* Left margin */
+    justify-content: center;  /* Centers icon */
 }
+
+/* Vision Section */
 .vision {
-    background:url(../images/vision.jpg);
-    margin-top: 25px;
-    background-repeat: no-repeat;  
-    background-size: cover;
-    background-position: center;
-    width: 100%;   
-    color: #fff;
-    padding: 10px;
-    padding-top: 22px;
+    background: url(../images/vision.jpg);  /* Background image */
+    margin-top: 25px;  /* Margin on top */
+    background-repeat: no-repeat;  /* Prevents repeating the image */
+    background-size: cover;  /* Ensures the image covers the section */
+    background-position: center;  /* Centers the background image */
+    width: 100%;  /* Full width */
+    color: #fff;  /* White text color */
+    padding: 10px;  /* Padding around the section */
+    padding-top: 22px;  /* Padding on top */
 }
+
 .vision h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 13px;
+    font-size: 1.25rem;  /* Font size */
+    font-weight: bold;  /* Bold font */
+    padding-bottom: 13px;  /* Bottom padding */
 }
+
 .vision p {
-    font-size: 10px;
-    padding-bottom: 15px;
-    line-height: 13px;
-    padding-right: 20px;
+    font-size: 0.625rem;  /* Small font size */
+    padding-bottom: 15px;  /* Bottom padding */
+    line-height: 1.625rem;  /* Line height */
+    padding-right: 20px;  /* Right padding */
 }
+
 .vision a {
-    display:inline-block;
-    padding: 22px;
-    background-color: #222;
-    text-decoration: none;
-    color: #fff;
-    font-size: 13px;
-    border: 1px solid #c78c06;
-    justify-content: center;
+    display: inline-block;  /* Block element */
+    padding: 22px;  /* Padding inside button */
+    background-color: #222;  /* Dark background */
+    color: #fff;  /* Accent color for text */
+    font-size: 0.8125rem;  /* Font size */
+    margin-left: 5px;  /* Left margin */
+    text-decoration: none;  /* Removes underline */
 }
+/* Team Section */
 #team {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+    display: flex;  /* Flexbox layout */
+    flex-direction: column;  /* Stacks team members vertically */
+    margin: 10px;  /* Margin around the entire team section */
 }
+
+/* Team Section Header */
 #team h2 {
-    font-size: 30px;
-    font-weight: bold;
-    padding-top: 30px;
-    padding-bottom: 13px;
+    font-size: 30px;  /* Font size for header */
+    font-weight: bold;  /* Bold text */
+    padding-top: 30px;  /* Top padding */
+    padding-bottom: 13px;  /* Bottom padding */
 }
+
+/* Individual Team Member Container */
 .team div {
-    background-color:#ffe6ac;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-
+    background-color: #ffe6ac;  /* Light yellow background */
+    margin-bottom: 10px;  /* Space below each team member */
+    padding-bottom: 10px;  /* Bottom padding inside each member container */
 }
+
+/* Team Member Image */
 .team div img {
-    width: 100%;
+    width: 100%;  /* Image takes full width of container */
 }
+
+/* Team Member Name */
 .team div h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-bottom: 3px;
+    font-size: 20px;  /* Font size for name */
+    font-weight: bold;  /* Bold text */
+    padding-left: 10px;  /* Left padding */
+    padding-bottom: 3px;  /* Bottom padding */
 }
+
+/* Team Member Role */
 .team div h4 {
-    font-size: 10px;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-bottom: 2px;
+    font-size: 10px;  /* Smaller font size for role */
+    font-weight: bold;  /* Bold text */
+    padding-left: 10px;  /* Left padding */
+    padding-bottom: 2px;  /* Bottom padding */
 }
+
+/* Divider Between Team Members */
 .devider {
-    display: flex;
-    border-top: 2px solid #c78c06;
-    margin-left: 10px;
-    margin-right: 10px;
-   
+    display: flex;  /* Flexbox layout */
+    border-top: 2px solid #c78c06;  /* Orange-colored top border */
+    margin-left: 10px;  /* Left margin */
+    margin-right: 10px;  /* Right margin */
 }
+
+/* Team Member Description */
 .team div p {
-    font-size: 10px;
-    line-height: 13px;
-    padding-right: 20px;
-    padding-left: 10px;
+    font-size: 10px;  /* Font size for description */
+    line-height: 13px;  /* Line height for readability */
+    padding-right: 20px;  /* Right padding */
+    padding-left: 10px;  /* Left padding */
 }
+
+/* Contact Section Header */
 .contact h2 {
-    font-size: 30px;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-top: 30px;
-    padding-bottom: 13px;
+    font-size: 30px;  /* Font size for the main contact header */
+    font-weight: bold;  /* Bold text */
+    padding-left: 10px;  /* Left padding */
+    padding-top: 30px;  /* Top padding */
+    padding-bottom: 13px;  /* Bottom padding */
 }
+
+/* Contact Section Subheader */
 .contact h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    font-size: 20px;  /* Font size for subheader */
+    font-weight: bold;  /* Bold text */
+    padding-bottom: 10px;  /* Bottom padding */
+    padding-left: 10px;  /* Left padding */
 }
+
+/* Contact Form Styles */
 .contact form {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    padding-right: 10px;
-    list-style: none;
+    display: flex;  /* Flexbox layout */
+    flex-direction: column;  /* Stacks form elements vertically */
+    padding-left: 10px;  /* Left padding */
+    padding-right: 10px;  /* Right padding */
+    list-style: none;  /* Removes default list styles */
 }
+
+/* Contact Form Label Styles */
 .contact form label {
-    font-size: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    font-size: 10px;  /* Small font size */
+    padding-bottom: 5px;  /* Padding below labels */
+    padding-top: 5px;  /* Padding above labels */
 }
+
+/* Contact Form Button Styles */
 .contact button {
-    background-color: #222;  
-    color: #c78c06;  
-    margin-top: 15px;    
-    margin-bottom: 20px; 
-    cursor: pointer;
-    text-align: left;
-    width: 10%;
+    display: block;  /* Button displayed as a block */
+    background-color: #222;  /* Dark background color */
+    color: #c78c06;  /* Text color (orange) */
+    margin-top: 15px;  /* Top margin */
+    margin-bottom: 20px;  /* Bottom margin */
+    cursor: pointer;  /* Pointer cursor on hover */
+    text-align: left;  /* Align text to the left */
+    width: 50px;  /* Width of the button */
 }
 
+/* Work Hours Section Header */
 .workhours h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-left: 10px;
+    font-size: 20px;  /* Font size */
+    font-weight: bold;  /* Bold text */
+    padding-bottom: 10px;  /* Bottom padding */
+    padding-left: 10px;  /* Left padding */
 }
+
+/* Table Styles */
 table {
-    margin-left: 10px;
-    width: 96%;
-    margin-bottom: 15px;
+    margin-left: 10px;  /* Left margin */
+    width: 96%;  /* Table takes up 96% of the width */
+    margin-bottom: 15px;  /* Bottom margin */
 }
+
 table thead tr {
-    background-color: #ffe6ac;
-  }
-  
- 
-  table th {
-    font-size: 10px;
-    padding: 10px;
-    text-align: center;
-    font-weight:normal;
-    border: 1px solid #222;
-   
-  }
-  table td {
-    font-size: 10px;
-    padding: 8px;
-    border: 1px solid #222;
-    
-  }
-  .location h3 {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 10px;
-  }
-  
-  .location-wrapper {
-    margin: 10px;
-  }
+    background-color: #ffe6ac;  /* Light yellow background for table header */
+}
 
-  
-  .location-wrapper iframe {
-    width: 100%; 
-    height: 450px; 
-    border: none; 
-  }
-  footer {
-    background: #222;
-    color: #c78c06;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 8px;
-    line-height: 20px;
-  }
-  footer a {
-    color: #c78c06;
-  }
+table th {
+    font-size: 10px;  /* Small font size */
+    padding: 10px;  /* Padding inside table header cells */
+    text-align: center;  /* Centers the text */
+    font-weight: normal;  /* Normal font weight */
+    border: 1px solid #222;  /* Dark border */
+}
 
-  @media (min-width: 760px) {
+table td {
+    font-size: 10px;  /* Font size for table data */
+    padding: 8px;  /* Padding inside table cells */
+    border: 1px solid #222;  /* Dark border */
+}
+
+/* Location Section */
+.location h3 {
+    font-size: 20px;  /* Font size */
+    font-weight: bold;  /* Bold text */
+    padding-left: 10px;  /* Left padding */
+}
+
+/* Location Wrapper */
+.location-wrapper {
+    margin: 10px;  /* Margin around location wrapper */
+}
+
+.location-wrapper iframe {
+    width: 100%;  /* Full width */
+    height: 450px;  /* Fixed height for map */
+    border: none;  /* No border around the iframe */
+}
+
+/* Footer Section */
+footer {
+    background: #222;  /* Dark background color */
+    color: #c78c06;  /* Text color (orange) */
+    padding-left: 10px;  /* Left padding */
+    padding-top: 10px;  /* Top padding */
+    font-size: 8px;  /* Small font size */
+    line-height: 20px;  /* Line height for readability */
+}
+
+footer a {
+    color: #c78c06;  /* Link color */
+}
+
+/* Media Queries for Responsive Design */
+
+/* For Screens Larger Than 760px (Tablets and Desktops) */
+@media (min-width: 760px) {
+    /* Header Styles */
     header {
-        height: auto;
+        height: auto;  /* Adjust header height */
     }
+
     nav {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
+        display: flex;  /* Flexbox layout */
+        flex-direction: row;  /* Row direction */
+        width: 100%;  /* Full width */
+        align-items: center;  /* Vertically aligns items */
     }
+
     .img {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-        background-color: inherit;
+        padding-top: .5rem;  /* Top padding */
+        padding-bottom: .5rem;  /* Bottom padding */
+        background-color: inherit;  /* Inherit background color */
     }
+
     nav ul {
-        display: flex;
-        flex-direction: row;
-        width: fit-content;
-        justify-content: space-between;
-        align-items: center;
+        display: flex;  /* Flexbox layout */
+        flex-direction: row;  /* Items displayed in a row */
+        width: fit-content;  /* Width based on content */
+        justify-content: space-between;  /* Space between items */
+        align-items: center;  /* Vertically centers items */
     }
+
     nav ul li a {
-        display: block;
-        padding-left: 5rem;
-        width: 100%;
-        justify-content: space-between;
+        display: block;  /* Block-level display */
+        padding-left: 5rem;  /* Left padding */
+        width: 100%;  /* Full width */
+        justify-content: space-between;  /* Space between content */
     }
+
     .search-container {
-        display: flex;
-        justify-content:center;
-        padding-left: 6rem;
-        align-items: center;
+        display: flex;  /* Flexbox layout */
+        justify-content: center;  /* Centers items */
+        padding-left: 6rem;  /* Left padding */
+        align-items: center;  /* Centers items vertically */
     }
+
     .search-input {
-        height: 30px;
-        width: 11rem;
+        height: 30px;  /* Input field height */
+        width: 11rem;  /* Input field width */
     }
+
     nav form button {
-        height: 47px;
-        width: 47px;
+        height: 47px;  /* Button height */
+        width: 47px;  /* Button width */
     }
+
     h1 {
-        padding-top: inherit;
-        margin-left:12%;
-        margin-right:12%;
-        margin-top: 1rem;
-        font-size: 80px;
-        padding-right: 60px;
-        line-height: 120px;
+        padding-top: inherit;  /* Inherit top padding */
+        margin-left: 12%;  /* Left margin */
+        margin-right: 12%;  /* Right margin */
+        margin-top: 1rem;  /* Top margin */
+        font-size: 80px;  /* Font size */
+        padding-right: 60px;  /* Right padding */
+        line-height: 120px;  /* Line height */
     }
-   
-    .welcome-paragraph { 
 
-        margin-left:12%;
-        margin-right:12%;
-        padding-right: 20px;
-        font-size: 15px;
-        line-height: 20px;
-        
+    .welcome-paragraph {
+        margin-left: 12%;  /* Left margin */
+        margin-right: 12%;  /* Right margin */
+        padding-right: 20px;  /* Right padding */
+        font-size: 15px;  /* Font size */
+        line-height: 20px;  /* Line height */
     }
-    .banner a{
-        padding: 30px; 
-        font-size: 20px;
-        margin-top: 15px;
+
+    .banner a {
+        padding: 30px;  /* Padding inside the link */
+        font-size: 20px;  /* Font size */
+        margin-top: 15px;  /* Top margin */
     }
+
     .fa-solid.fa-caret-right {
-        font-size: 30px;
+        font-size: 30px;  /* Icon size */
     }
+
     #about-us {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      
-     
-      .image-wrapper {
-        width: 100%;
-        max-width: 40%; 
-        padding-top: 10px;
-      }
-      
-      #about-us {
-        width: 100%;
-        height: auto; 
-      }
-      
-      
-      .text-wrapper {
-        text-align: left;
-        max-width: 35%;
-        margin-left: 1rem;
-        
-      }
-      
-      #about-us h2 {
-        font-size: 50px;
-        margin-bottom: 10px;
-      }
-      
-      #about-us p {
-        font-size: 15px;
-        margin-bottom: 15px;
-        color: #222;
-        line-height: 1.6;
-      }
+        display: flex;  /* Flexbox layout */
+        flex-direction: row;  /* Row direction */
+        justify-content: center;  /* Centers content */
+        align-items: center;  /* Vertically aligns content */
+    }
 
-      
-      #services h2 {
-        font-size: 2.5rem;
-        color: #222;
-        margin-left: 12%;
-        margin-top: 40px;
-      }
-      
-      
-      .plans {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        justify-items: center;
-        grid-template-rows: auto auto;
-        margin-left: 12%;
-        margin-right: 12%;
-      }
-      
-      .plans img {
-        width: 100%;
-        height: auto;
-      }
-      
-      .plans div h3 {
-        font-size: 30px;
-        color: #222;
-      }
-      
-      .plans div p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-        line-height: 1.4rem;
-      }
-      
-      .plans a {
-        display: inline-block;
-        text-decoration: none;
-        width: 82%;
-        font-weight: bold;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      .first a, 
-      .second a {
-        width: 88%;
-      }
-      .fa-solid.fa-caret-right {
-        font-size: 20px;
-        margin-left: 5px;
-        justify-content: center;
+    .image-wrapper {
+        width: 100%;  /* Full width */
+        max-width: 40%;  /* Max width of 40% */
+        padding-top: 10px;  /* Padding top */
     }
-    .plans div:nth-child(1),
-    .plans div:nth-child(2) {
-        grid-row:1; 
-        grid-column:span 3;
+
+    #about-us {
+        width: 100%;  /* Full width */
+        height: auto;  /* Auto height */
     }
-   
-    
-    .plans div:nth-child(3),
-    .plans div:nth-child(4),
-    .plans div:nth-child(5) {
-      grid-row:2; 
-      grid-column:span 2;
-    } 
-      
+
+    .text-wrapper {
+        text-align: left;  /* Left-aligned text */
+        max-width: 35%;  /* Max width of 35% */
+        margin-left: 1rem;  /* Left margin */
+    }
+
+    #about-us h2 {
+        font-size: 50px;  /* Font size */
+        margin-bottom: 10px;  /* Bottom margin */
+    }
+
+    #about-us p {
+        font-size: 15px;  /* Font size */
+        margin-bottom: 15px;  /* Bottom margin */
+        color: #222;  /* Text color */
+        line-height: 1.6;  /* Line height */
+    }
+
+    #services h2 {
+        font-size: 2.5rem;  /* Font size */
+        color: #222;  /* Text color */
+        margin-left: 12%;  /* Left margin */
+        margin-top: 40px;  /* Top margin */
+    }
+
+    .plans {
+        display: grid;  /* Grid layout */
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  /* 6 equal columns */
+        justify-items: center;  /* Centers items */
+        grid-template-rows: auto auto;  /* Auto height for rows */
+        margin-left: 12%;  /* Left margin */
+        margin-right: 12%;  /* Right margin */
+    }
+
+    .plans img {
+        width: 100%;  /* Full width */
+        height: auto;  /* Auto height */
+    }
+
+    .plans div h3 {
+        font-size: 30px;  /* Font size */
+        color: #222;  /* Text color */
+    }
+
+    .plans div p {
+        font-size: 1rem;  /* Font size */
+        margin-bottom: 20px;  /* Bottom margin */
+        line-height: 1.4rem;  /* Line height */
+    }
+
+    .plans a {
+        display: inline-block;  /* Inline block layout */
+        text-decoration: none;  /* No underline */
+        width: 82%;  /* Width of the link */
+        font-weight: bold;  /* Bold text */
+        text-align: center;  /* Center-aligned text */
+        justify-content: center;  /* Center content */
+        align-items: center;  /* Vertically align */
+    }
+
+    .first a, .second a {
+        width: 88%;  /* Increase width for first two items */
+    }
+
+    .fa-solid.fa-caret-right {
+        font-size: 20px;  /* Icon size */
+        margin-left: 5px;  /* Left margin */
+        justify-content: center;  /* Center icon */
+    }
+
+    .plans div:nth-child(1), .plans div:nth-child(2) {
+        grid-row: 1;  /* Place these in the first row */
+        grid-column: span 3;  /* Span across 3 columns */
+    }
+
+    .plans div:nth-child(3), .plans div:nth-child(4), .plans div:nth-child(5) {
+        grid-row: 2;  /* Place these in the second row */
+        grid-column: span 2;  /* Span across 2 columns */
+    }
+
     .vision {
-        padding-left: 12%;
-        background-size:cover;
+        padding-left: 12%;  /* Left padding */
+        background-size: cover;  /* Background covers entire area */
     }
-    .vision h3 {
-        font-size: 30px;
-    }
-    .vision p {
-        font-size: 15px;
-        line-height: 25px; 
-        width: 75%;
-    }
-    .vision a {
-        font-size: 18px;
-    } 
-    .team div img {
-        padding-bottom:inherit;
-        width: inherit;
-    } 
-    .team div {
-        margin-bottom: inherit;
-        padding-bottom: inherit;
-        margin-left: 0;
-        margin-right: 0;
-      }
-      .team div p {
-        font-size: inherit;
-        padding-bottom: inherit;
-        line-height: inherit;
-        padding-right: inherit;
-        padding-left: inherit;
-    }
-    #team h2 {
-        font-size: 2.5rem;
-        color: #222;
-        margin-top: 15px;
-        margin-left: 11%;  
-    }
-    
-    .team {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 12%;
-        margin-right: 12%;
-        
-      }
-    .img-wrapper {
-        width: 100%;
-        max-width: 50%;
-    }
-     .john {
-        display: flex;
-        flex-direction: row;
-        
-        
 
-     }
-     
-     .bob {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        
-     }
-      #team {
-        width: 100%;
-        height: auto;
-       
-      }
-      
-      .txt-wrapper {
-        text-align: left;
-        max-width: 50%;
-        margin: 10px;
-      }
-      .devider {
-        margin-left: 10px;
-        margin-right: 10px;
-      }
-      
-      #team div p {
-        font-size: 18px;
-        margin-bottom: 15px;
-        color: #222;
-        line-height: 1.6;
-        margin: 10px;
-      }
-      #contact {
-        margin-left: 12%;
-        margin-right: 12%;
-      }
-      .contact h2 {
-        font-size: 40px;
-        font-weight: bold;
-        padding-bottom: 18px;
-        padding-left: 10px;
-      }
-      .contact h3 {
-        font-size: 25px;
-        font-weight: bold;
-        padding-bottom: 20px;
-        padding-left: 10px;
+    .vision h3 {
+        font-size: 30px;  /* Font size */
     }
-    .contact {
-        max-width: 100%;
-        width: 50%;
+
+    .vision p {
+        font-size: 15px;  /* Font size */
+        line-height: 25px;  /* Line height */
+        width: 75%;  /* Width of the text */
     }
-    .contact form {
-        display: grid;
-        grid-column: 1;
+
+    .vision a {
+        font-size: 18px;  /* Font size for link */
     }
-    .location {
-        max-width: 100%;
-        width: 50%;
+
+    /* Adjusting Team Section for Larger Screens */
+    .team div img {
+        padding-bottom: inherit;  /* Inherit padding from parent */
+        width: inherit;  /* Inherit width from parent */
     }
+
+    .team div {
+        margin-bottom: inherit;  /* Inherit margin from parent */
+        padding-bottom: inherit;  /* Inherit padding from parent */
+        margin-left: 0;  /* No margin-left */
+        margin-right: 0;  /* No margin-right */
+    }
+
+    .team div p {
+        font-size: inherit;  /* Inherit font size */
+        padding-bottom: inherit;  /* Inherit padding */
+        line-height: inherit;  /* Inherit line height */
+        padding-right: inherit;  /* Inherit padding */
+        padding-left: inherit;  /* Inherit padding */
+    }
+
+    #team h2 {
+        font-size: 2.5rem;  /* Larger font size for header */
+        color: #222;  /* Dark color for text */
+        margin-top: 15px;  /* Top margin */
+        margin-left: 11%;  /* Left margin */
+    }
+
+    .team {
+        display: flex;  /* Flexbox layout */
+        flex-direction: column;  /* Column layout */
+        justify-content: center;  /* Center content */
+        align-items: center;  /* Align content in the center */
+        margin-left: 12%;  /* Left margin */
+        margin-right: 12%;  /* Right margin */
+    }
+
+    .img-wrapper {
+        width: 100%;  /* Full width for the image */
+        max-width: 50%;  /* Max width of 50% */
+    }
+
+    .john {
+        display: flex;  /* Flexbox layout */
+        flex-direction: row;  /* Row direction */
+    }
+
+    .bob {
+        display: flex;  /* Flexbox layout */
+        flex-direction: row-reverse;  /* Row reverse direction */
+        justify-content: flex-end;  /* Align content to the right */
+    }
+
+    #team {
+        width: 100%;  /* Full width */
+        height: auto;  /* Auto height */
+    }
+
+    .txt-wrapper {
+        text-align: left;  /* Left-align text */
+        max-width: 50%;  /* Max width of 50% */
+        margin: 10px;  /* Margin around text wrapper */
+    }
+
+    .devider {
+        margin-left: 10px;  /* Left margin */
+        margin-right: 10px;  /* Right margin */
+    }
+
+    #team div p {
+        font-size: 18px;  /* Font size for description */
+        margin-bottom: 15px;  /* Bottom margin */
+        color: #222;  /* Dark color for text */
+        line-height: 1.6;  /* Line height for readability */
+        margin: 10px;  /* Margin around description */
+    }
+
+    .team div h3 {
+        font-size: 30px;  /* Font size for name */
+        font-weight: bold;  /* Bold text */
+        padding-left: 10px;  /* Left padding */
+        padding-bottom: 3px;  /* Bottom padding */
+    }
+
+    .team div h4 {
+        font-size: 14px;  /* Larger font size for role */
+        font-weight: bold;  /* Bold text */
+        padding-left: 10px;  /* Left padding */
+        padding-bottom: 2px;  /* Bottom padding */
+    }
+
     #contact {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: auto auto;
-        
+        margin-left: 12%;  /* Left margin */
+        margin-right: 12%;  /* Right margin */
     }
-    
+
+    .contact h2 {
+        font-size: 40px;  /* Larger font size */
+        font-weight: bold;  /* Bold text */
+        padding-bottom: 18px;  /* Bottom padding */
+        padding-left: 10px;  /* Left padding */
+    }
+
+    .contact h3 {
+        font-size: 25px;  /* Font size for subheader */
+        font-weight: bold;  /* Bold text */
+        padding-bottom: 20px;  /* Bottom padding */
+        padding-left: 10px;  /* Left padding */
+    }
+
     .contact {
-        grid-column: 1; 
-        width: 100%;
+        max-width: 100%;  /* Full width */
+        width: 50%;  /* 50% width for the contact form */
     }
-    input[type="text"], input[type="email"] {
-        height: 25px; 
-        padding: 10px; 
-        font-size: 16px; 
-        border: 1px solid #222; 
+
+    .contact form {
+        display: grid;  /* Grid layout */
+        grid-column: 1;  /* Grid column */
     }
-    label [fullname] {
-        font-size: 10px;
-    }
-    textarea {
-        height: 120px;
-        padding: 10px;
-        font-size: 16px; 
-        border-radius: 5px;
-        border: 1px solid #222;
-        resize: vertical; 
-        margin-bottom: 15px;
-    }
-    form label {
-        margin-top:8px ;
-    }
-    button {
-        height: 30px; /* Set height for buttons */
-        font-size: 16px; 
-        cursor: pointer;
-       
-        
-    }
-    .workhours {
-        grid-column: span 2;
-        grid-row:2 ;
-        max-width: 100%;
-        width: 100%;
-    }
-    
+
     .location {
-        grid-row: 1; /* Place Location section in the third row */
-        grid-column: 2;
-        width: 100%;
-        padding-top: 17%;
+        max-width: 100%;  /* Full width */
+        width: 50%;  /* 50% width for location */
     }
+
+    #contact {
+        display: grid;  /* Grid layout */
+        grid-template-columns: 1fr 1fr;  /* 2 equal columns */
+        grid-template-rows: auto auto;  /* Auto height for rows */
+    }
+
+    .contact {
+        grid-column: 1;  /* Grid column */
+        width: 100%;  /* Full width */
+    }
+
+    input[type="text"], input[type="email"] {
+        height: 25px;  /* Height of input fields */
+        padding: 10px;  /* Padding inside input fields */
+        font-size: 16px;  /* Font size */
+        border: 1px solid #222;  /* Dark border */
+    }
+
+    label [fullname] {
+        font-size: 10px;  /* Smaller font size for label */
+    }
+
+    textarea {
+        height: 120px;  /* Text area height */
+        padding: 10px;  /* Padding inside text area */
+        font-size: 16px;  /* Font size */
+        border-radius: 5px;  /* Rounded corners */
+        border: 1px solid #222;  /* Border color */
+        resize: vertical;  /* Allow vertical resize */
+        margin-bottom: 15px;  /* Bottom margin */
+    }
+
+    form label {
+        margin-top: 8px;  /* Top margin for label */
+    }
+
+    .contact button {
+        height: 30px;  /* Button height */
+        font-size: 16px;  /* Font size */
+        cursor: pointer;  /* Pointer cursor on hover */
+        width: 55px;  /* Button width */
+    }
+
+    .workhours {
+        grid-column: span 2;  /* Span across 2 columns */
+        grid-row: 2;  /* Row number */
+        max-width: 100%;  /* Full width */
+        width: 100%;  /* Full width */
+    }
+
+    .location {
+        grid-row: 1;  /* First row */
+        grid-column: 2;  /* Second column */
+        width: 100%;  /* Full width */
+        padding-top: 95px;  /* Top padding */
+    }
+
     .location h3 {
-        font-size: 25px;
+        font-size: 25px;  /* Font size */
     }
+
     .workhours h3 {
-        font-size: 25px;
-        margin-top: 35px;
+        font-size: 25px;  /* Font size */
+        margin-top: 35px;  /* Top margin */
     }
+
     table {
-        max-width: 100%;
-        width: 98%;
+        max-width: 100%;  /* Full width for table */
+        width: 98%;  /* 98% width */
     }
+
     table th {
-        font-size: 15px;
-        padding: 10px;
-        text-align: center;
-        font-weight:normal;
-        border: 1px solid #222;
+        font-size: 15px;  /* Font size */
+        padding: 10px;  /* Padding */
+        text-align: center;  /* Center text */
+        font-weight: normal;  /* Normal weight */
+        border: 1px solid #222;  /* Border color */
     }
+
     table td {
-        font-size: 15px;
-        padding: 14px;
-        border: 1px solid #222;
-        
-      }
-      footer {
-        background: #222;
-        color: #c78c06;
-        padding-left: 13%;
-        padding-top: 10px;
-        font-size: 12px;
-        line-height: 30px;
-        padding-bottom: 10px;
-      }
+        font-size: 15px;  /* Font size */
+        padding: 14px;  /* Padding */
+        border: 1px solid #222;  /* Border color */
+    }
+
+    footer {
+        background: #222;  /* Dark background */
+        color: #c78c06;  /* Gold text color */
+        padding-left: 13%;  /* Left padding */
+        padding-top: 10px;  /* Top padding */
+        font-size: 12px;  /* Font size */
+        line-height: 30px;  /* Line height */
+        padding-bottom: 10px;  /* Bottom padding */
+    }
   @media (min-width: 1200px) {
     .container {
       max-width: 1200px;
