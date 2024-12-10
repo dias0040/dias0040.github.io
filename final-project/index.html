@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
     <head>
     <!-- Character encoding set to UTF-8 to support various characters -->
     <meta charset="UTF-8">
@@ -12,6 +12,14 @@
     
     <!-- Title of the webpage (appears on the browser tab) -->
     <title>Three Star Media</title>
+    
+    <!-- embedding reset css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- embedding css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Icon embedding code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     </head>
    
     <body>
@@ -19,23 +27,25 @@
     <header>
         <nav>
             <!-- Company logo image -->
-            <img src="./css/images/logo.png" alt="Three Star Media Logo">
-            
+             <div class="img">
+            <img src="./images/logo.png" alt="Three Star Media Logo">
+            </div>
             <!-- Navigation links to different sections of the page -->
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
-                
-                <!-- Search form (input and button) -->
-                <li>
-                    <form action="#" method="get">
-                        <input type="text" id="search-query" name="search-query" placeholder="Search...">
-                        <button type="submit">Search</button>
-                    </form>
-                </li>
             </ul>
+            <!-- Search form (input and button) -->
+                
+                    <form action="#" method="get" class="search-container">
+                        
+                        <input type="text" id="search-query" name="search-query" placeholder="Search" class="search-input">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass" id="icon"></i></button>
+                        
+                    </form>
         </nav>
     </header>
     <main>
@@ -43,16 +53,20 @@
     <div class="banner">
     <h1>Welcome to Three Star Media</h1>
     <!-- Short welcome text (placeholder for real content) -->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi cumque numquam dolorem illum, ipsam accusamus velit labore vel dolor. Vitae, voluptatum maxime fugit adipisci suscipit veniam tempora quae voluptas</p>
-    <a href="#contact">Connect with us</a>
+    <p class="welcome-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi cumque numquam dolorem illum, ipsam accusamus velit labore vel dolor. Vitae, voluptatum maxime fugit adipisci suscipit veniam tempora quae voluptas <br><a href="#contact" >Connect with us <i class="fa-solid fa-caret-right"></i></a></p>
+    
     </div>
     <!-- About Us Section -->
     <section id="about-us">
-        <img src="./css/images/about-us.jpg" alt="About Us">
+        <div class="image-wrapper">
+        <img src="./images/about-us.jpg" alt="About Us" id="aboutus">
+        </div>
+        <div class="text-wrapper">
         <h2>About Us</h2>
         <!-- Company description (placeholder text) -->
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quaerat fugit quidem ea facilis odit laudantium consectetur distinctio similique nisi maiores! Doloribus laudantium error dignissimos minus eaque illum quod facere!</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, quaerat fugit quidem ea facilis odit laudantium consectetur distinctio similique nisi maiores! Doloribus laudantium error dignissimos minus eaque illum quod facere!</p>
+        </div>
     </section>
 
     <!-- Services Section -->
@@ -61,48 +75,47 @@
         <!-- "Plans" container for individual service offerings -->
         <div class="plans">
             <!-- Digital Transformation Service -->
-            <div>
-                <img src="./css/images/digital.jpg" alt="Digital Transformation">
+            <div class="first">
+                <img src="./images/digital.jpg" alt="Digital Transformation">
                 <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. Debitis.</p>
-                <a href="">Digital plans</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. illo rem facilis cupiditate beatae illo rem facilis velit?</p>
+                <a href="">Digital Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
             <!-- Marketing Service -->
-            <div>
-                <img src="./css/images/marketing.jpg" alt="Marketing">
+            <div class="second">
+                <img src="./images/marketing.jpg" alt="Marketing">
                 <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. Debitis.</p>
-                <a href="">Marketing plans</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. illo rem facilis cupiditate beatae illo rem facilis velit?</p>
+                <a href="">Marketing Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
             <!-- Video Production Service -->
             <div>
-                <img src="./css/images/video.jpg" alt="Video Production">
+                <img src="./images/video.jpg" alt="Video Production">
                 <h3>Video production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. Debitis.</p>
-                <a href="">Video plans</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. illo rem facilis cupiditate beatae illo rem facilis velit?</p>
+                <a href="">Video Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
             <!-- Web Development Service -->
             <div>
-                <img src="./css/images/web.jpg" alt="Web Development">
+                <img src="./images/web.jpg" alt="Web Development">
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. Debitis.</p>
-                <a href="">Web plans</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. illo rem facilis cupiditate beatae illo rem facilis velit?</p>
+                <a href="">Web Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
             <!-- Print Service -->
             <div>
-                <img src="./css/images/print.jpg" alt="Print">
+                <img src="./images/print.jpg" alt="Print">
                 <h3>Print</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. Debitis.</p>
-                <a href="">Print plans</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. illo rem facilis cupiditate beatae illo rem facilis velit?</p>
+                <a href="">Print Plans <i class="fa-solid fa-caret-right"></i></a>
             </div>
         </div>
 
         <!-- Vision Section -->
-        <div>
-            <img src="./css/images/vision.jpg" alt="Our Vision">
+        <div class="vision">
             <h3>Our Vision</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. Debitis.</p>
-            <a href="">Learn More</a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ducimus fuga blanditiis dicta ex inventore possimus mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente. illo rem facilis cupiditate beatae illo rem facilis velit?</p>
+            <a href="">Learn More <i class="fa-solid fa-caret-right"></i></a>
         </div>
     </section>
 
@@ -111,21 +124,31 @@
         <h2>Our Team</h2>
         <div class="team">
             <!-- Team Member 1: John -->
-            <div>
-                <img src="./css/images/john.jpg" alt="John Doe">
+             <div class="john">
+             <div class="img-wrapper">
+             <img src="./images/john.jpg" alt="John Doe">   
+             </div>
+            <div class="txt-wrapper">
+                
                 <h3>John Doe</h3>
-                <hr>
                 <h4>CEO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa dolore, atque fugit impedit quia non neque quaerat repellendus soluta.</p>
+                <div class="devider"></div> 
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa dolore, atque fugit impedit quia non neque quaerat repellendus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente.</p>
+            </div>
             </div>
             <!-- Team Member 2: Bob -->
-            <div>
-                <img src="./css/images/bob.jpg" alt="Bob Rite">
+             <div class="bob">
+             <div class="img-wrapper">
+                <img src="./images/bob.jpg" alt="Bob Rite">
+             </div>
+            <div class="txt-wrapper">
+                
                 <h3>Bob Rite</h3>
-                <hr>
                 <h4>CFO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa dolore, atque fugit impedit quia non neque quaerat repellendus soluta.</p>
+                <div class="devider"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa dolore, atque fugit impedit quia non neque quaerat repellendus soluta. Lorem ipsum dolor sit amet consectetur adipisicing elit. mollitia quidem atque qui sunt in, eos ad velit minima excepturi cupiditate sapiente.</p>
             </div>
+        </div>
         </div>
     </section>
 
@@ -136,24 +159,18 @@
             <h3>Send us a message</h3>
             <!-- Contact form to send inquiries -->
             <form action="#" method="post">
-                <label for="name">Name:</label>
+                <label for="name" class="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
+                <label for="email" class="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
+                <label for="message" class="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+                <button type="submit">Send</button>
+               </form>
+             
         </div>
-
-        <!-- Location Section: Embed Google Map -->
-        <div>
-            <h3>Location</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89712.22705935518!2d-75.79509569817752!3d45.358761325966086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732300134373!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
         <!-- Hours of Operation Table -->
-        <div>
+        <div class="workhours">
             <h3>Hours of operation</h3>
             <table>
                 <thead>
@@ -165,7 +182,7 @@
                 <tbody>
                     <tr>
                         <td>Monday - Friday</td>
-                        <td>9:00 AM - 6:00 PM</td>
+                        <td>9 AM - 6 PM</td>
                     </tr>
                     <tr>
                         <td>Saturday - Sunday</td>
@@ -174,6 +191,15 @@
                 </tbody>
             </table>
         </div>
+        <!-- Location Section: Embed Google Map -->
+        <div class="location">
+            <h3>Location</h3>
+            <div class="location-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89712.22705935518!2d-75.79509569817752!3d45.358761325966086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732300134373!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        
     </section>
     </main>
     <!-- Footer Section -->

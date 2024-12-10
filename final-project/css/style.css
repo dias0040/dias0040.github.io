@@ -1,0 +1,726 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #222222;  
+    padding: 1rem 0;  
+    padding-bottom: 2px;   
+}
+nav{
+    padding: 0rem .6rem;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.img{
+    background-color:#c78c06 ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+nav ul li a {
+    display: block;
+    color: white;           
+    text-decoration: none;  
+    font-size: 18px;        
+    padding: 1.5rem 0;     
+    color:#c78c06;
+    width: 42.75rem; 
+    text-align: center;
+   
+}
+.search-container {
+    display: flex;
+    font-size: 17px;       
+    outline: none; 
+}
+.search-input {
+    flex-grow: 1;   
+    padding:  0 6px;       
+    height: 26px;   
+    font-size: 14px; 
+    
+         
+}
+nav form button {
+    background-color: #222;  
+    color: #c78c06;          
+    border: 1.5px solid #c78c06;
+}
+.fa-solid.fa-magnifying-glass {
+    font-size: 15px;
+    justify-content: center;
+}
+.banner{
+    background:url(../images/main-banner.jpg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center;
+    width: 100%;   
+    
+    
+}
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color:#fff;
+    padding-top: 3rem;
+    padding-left: .8rem;
+    line-height: 65px;
+    background-color: #2222229e;
+    margin-top: 4.5rem;
+
+}
+.welcome-paragraph {
+    font-size: 10px;
+    color: #fff;
+    padding-left: .8rem;
+    padding-top: 20px;
+    background-color: #2222229e;
+    padding-bottom: 15px;
+    line-height: 15px;
+    font-weight: lighter;
+}
+.banner a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+    list-style: none;
+    color: #222;
+    background-color: #c78c06;
+    padding: 20px;
+    font-size: 15px;
+    margin-top: 10px; 
+}
+#about-us {
+    background-color:#ffe6ac;
+    padding: 10px;
+    padding-bottom: 0;
+}
+#about-us img {
+    width: 100%;
+    padding-bottom: 20px;
+}
+#about-us h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 13px;
+}
+#about-us p {
+    font-size: 10px;
+    padding-bottom: 15px;
+    line-height: 15px;
+    font-weight: normal;
+}
+#services h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+}
+.plans div {
+    background-color:#ffe6ac;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    
+}
+.plans div img {
+    width: 100%;
+    padding-bottom: 15px;
+}
+.plans div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 13px;
+    padding: 10px;
+}
+.plans div p {
+    font-size: 10px;
+    padding-bottom: 15px;
+    line-height: 13px;
+    padding: 10px;
+}
+.plans div a {
+    display:inline-block;
+    padding: 22px;
+    background-color: #222;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    margin-left: 10px;
+    justify-content: center;
+}
+.fa-solid.fa-caret-right {
+    font-size: 20px;
+    margin-left: 5px;
+    justify-content: center;
+}
+.vision {
+    background:url(../images/vision.jpg);
+    margin-top: 25px;
+    background-repeat: no-repeat;  
+    background-size: cover;
+    background-position: center;
+    width: 100%;   
+    color: #fff;
+    padding: 10px;
+    padding-top: 22px;
+}
+.vision h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 13px;
+}
+.vision p {
+    font-size: 10px;
+    padding-bottom: 15px;
+    line-height: 13px;
+    padding-right: 20px;
+}
+.vision a {
+    display:inline-block;
+    padding: 22px;
+    background-color: #222;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    border: 1px solid #c78c06;
+    justify-content: center;
+}
+#team {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#team h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+.team div {
+    background-color:#ffe6ac;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+}
+.team div img {
+    width: 100%;
+}
+.team div h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+.team div h4 {
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 2px;
+}
+.devider {
+    display: flex;
+    border-top: 2px solid #c78c06;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.team div p {
+    font-size: 10px;
+    line-height: 13px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+.contact h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+.contact h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+}
+.contact form label {
+    font-size: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.contact button {
+    background-color: #222;  
+    color: #c78c06;  
+    margin-top: 15px;    
+    margin-bottom: 20px; 
+    cursor: pointer;
+    text-align: left;
+    width: 10%;
+}
+
+.workhours h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+table {
+    margin-left: 10px;
+    width: 96%;
+    margin-bottom: 15px;
+}
+table thead tr {
+    background-color: #ffe6ac;
+  }
+  
+ 
+  table th {
+    font-size: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight:normal;
+    border: 1px solid #222;
+   
+  }
+  table td {
+    font-size: 10px;
+    padding: 8px;
+    border: 1px solid #222;
+    
+  }
+  .location h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  
+  .location-wrapper {
+    margin: 10px;
+  }
+
+  
+  .location-wrapper iframe {
+    width: 100%; 
+    height: 450px; 
+    border: none; 
+  }
+  footer {
+    background: #222;
+    color: #c78c06;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 8px;
+    line-height: 20px;
+  }
+  footer a {
+    color: #c78c06;
+  }
+
+  @media (min-width: 760px) {
+    header {
+        height: auto;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .img {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        background-color: inherit;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul li a {
+        display: block;
+        padding-left: 5rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .search-container {
+        display: flex;
+        justify-content:center;
+        padding-left: 6rem;
+        align-items: center;
+    }
+    .search-input {
+        height: 30px;
+        width: 11rem;
+    }
+    nav form button {
+        height: 47px;
+        width: 47px;
+    }
+    h1 {
+        padding-top: inherit;
+        margin-left:12%;
+        margin-right:12%;
+        margin-top: 1rem;
+        font-size: 80px;
+        padding-right: 60px;
+        line-height: 120px;
+    }
+   
+    .welcome-paragraph { 
+
+        margin-left:12%;
+        margin-right:12%;
+        padding-right: 20px;
+        font-size: 15px;
+        line-height: 20px;
+        
+    }
+    .banner a{
+        padding: 30px; 
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .fa-solid.fa-caret-right {
+        font-size: 30px;
+    }
+    #about-us {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      
+     
+      .image-wrapper {
+        width: 100%;
+        max-width: 40%; 
+        padding-top: 10px;
+      }
+      
+      #about-us {
+        width: 100%;
+        height: auto; 
+      }
+      
+      
+      .text-wrapper {
+        text-align: left;
+        max-width: 35%;
+        margin-left: 1rem;
+        
+      }
+      
+      #about-us h2 {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      
+      #about-us p {
+        font-size: 15px;
+        margin-bottom: 15px;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      
+      #services h2 {
+        font-size: 2.5rem;
+        color: #222;
+        margin-left: 12%;
+        margin-top: 40px;
+      }
+      
+      
+      .plans {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        grid-template-rows: auto auto;
+        margin-left: 12%;
+        margin-right: 12%;
+      }
+      
+      .plans img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .plans div h3 {
+        font-size: 30px;
+        color: #222;
+      }
+      
+      .plans div p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        line-height: 1.4rem;
+      }
+      
+      .plans a {
+        display: inline-block;
+        text-decoration: none;
+        width: 82%;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      .first a, 
+      .second a {
+        width: 88%;
+      }
+      .fa-solid.fa-caret-right {
+        font-size: 20px;
+        margin-left: 5px;
+        justify-content: center;
+    }
+    .plans div:nth-child(1),
+    .plans div:nth-child(2) {
+        grid-row:1; 
+        grid-column:span 3;
+    }
+   
+    
+    .plans div:nth-child(3),
+    .plans div:nth-child(4),
+    .plans div:nth-child(5) {
+      grid-row:2; 
+      grid-column:span 2;
+    } 
+      
+    .vision {
+        padding-left: 12%;
+        background-size:cover;
+    }
+    .vision h3 {
+        font-size: 30px;
+    }
+    .vision p {
+        font-size: 15px;
+        line-height: 25px; 
+        width: 75%;
+    }
+    .vision a {
+        font-size: 18px;
+    } 
+    .team div img {
+        padding-bottom:inherit;
+        width: inherit;
+    } 
+    .team div {
+        margin-bottom: inherit;
+        padding-bottom: inherit;
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .team div p {
+        font-size: inherit;
+        padding-bottom: inherit;
+        line-height: inherit;
+        padding-right: inherit;
+        padding-left: inherit;
+    }
+    #team h2 {
+        font-size: 2.5rem;
+        color: #222;
+        margin-top: 15px;
+        margin-left: 11%;  
+    }
+    
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12%;
+        margin-right: 12%;
+        
+      }
+    .img-wrapper {
+        width: 100%;
+        max-width: 50%;
+    }
+     .john {
+        display: flex;
+        flex-direction: row;
+        
+        
+
+     }
+     
+     .bob {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        
+     }
+      #team {
+        width: 100%;
+        height: auto;
+       
+      }
+      
+      .txt-wrapper {
+        text-align: left;
+        max-width: 50%;
+        margin: 10px;
+      }
+      .devider {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      
+      #team div p {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: #222;
+        line-height: 1.6;
+        margin: 10px;
+      }
+      #contact {
+        margin-left: 12%;
+        margin-right: 12%;
+      }
+      .contact h2 {
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 18px;
+        padding-left: 10px;
+      }
+      .contact h3 {
+        font-size: 25px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+    .contact {
+        max-width: 100%;
+        width: 50%;
+    }
+    .contact form {
+        display: grid;
+        grid-column: 1;
+    }
+    .location {
+        max-width: 100%;
+        width: 50%;
+    }
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: auto auto;
+        
+    }
+    
+    .contact {
+        grid-column: 1; 
+        width: 100%;
+    }
+    input[type="text"], input[type="email"] {
+        height: 25px; 
+        padding: 10px; 
+        font-size: 16px; 
+        border: 1px solid #222; 
+    }
+    label [fullname] {
+        font-size: 10px;
+    }
+    textarea {
+        height: 120px;
+        padding: 10px;
+        font-size: 16px; 
+        border-radius: 5px;
+        border: 1px solid #222;
+        resize: vertical; 
+        margin-bottom: 15px;
+    }
+    form label {
+        margin-top:8px ;
+    }
+    button {
+        height: 30px; /* Set height for buttons */
+        font-size: 16px; 
+        cursor: pointer;
+       
+        
+    }
+    .workhours {
+        grid-column: span 2;
+        grid-row:2 ;
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .location {
+        grid-row: 1; /* Place Location section in the third row */
+        grid-column: 2;
+        width: 100%;
+        padding-top: 17%;
+    }
+    .location h3 {
+        font-size: 25px;
+    }
+    .workhours h3 {
+        font-size: 25px;
+        margin-top: 35px;
+    }
+    table {
+        max-width: 100%;
+        width: 98%;
+    }
+    table th {
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+        font-weight:normal;
+        border: 1px solid #222;
+    }
+    table td {
+        font-size: 15px;
+        padding: 14px;
+        border: 1px solid #222;
+        
+      }
+      footer {
+        background: #222;
+        color: #c78c06;
+        padding-left: 13%;
+        padding-top: 10px;
+        font-size: 12px;
+        line-height: 30px;
+        padding-bottom: 10px;
+      }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+    }
+    }
+}
